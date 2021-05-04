@@ -47,7 +47,7 @@ function create() {
     scoreText = game.add.text(5, 5, 'Бонус: 0', textStyle);
     livesText = game.add.text(game.world.width-5, 5, 'Спроби: '+lives, textStyle);
     livesText.anchor.set(1,0);
-    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, tap to continue', textStyle);
+    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Спроба втрачена,клікніть, щоб продовжити.', textStyle);
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
 
