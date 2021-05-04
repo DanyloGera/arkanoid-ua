@@ -43,7 +43,7 @@ function create() {
 
     initBricks();
 
-    textStyle = { font: '20pt Black Ops One', fill: '#2D79AF' };
+    textStyle = { font: '20pt', fill: '#2D79AF' };
     scoreText = game.add.text(5, 5, 'Бонус: 0', textStyle);
     livesText = game.add.text(game.world.width-5, 5, 'Спроби: '+lives, textStyle);
     livesText.anchor.set(1,0);
