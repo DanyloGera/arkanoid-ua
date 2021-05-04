@@ -105,7 +105,7 @@ function ballHitBrick(ball, brick) {
     scoreText.setText('Бонус: '+score);
     if(score === brickInfo.count.row*brickInfo.count.col*10) {
         alert('Вітання! Ваш рахунок: + ' + score);
-        window.location.href="https://danylogera.github.io/game-5/";
+        window.location.href="https://danylogera.github.io/game-5ua/";
     }
 }
 function ballLeaveScreen() {
