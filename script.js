@@ -44,8 +44,8 @@ function create() {
     initBricks();
 
     textStyle = { font: '20pt Black Ops One', fill: '#2D79AF' };
-    scoreText = game.add.text(5, 5, 'Points: 0', textStyle);
-    livesText = game.add.text(game.world.width-5, 5, 'Lives: '+lives, textStyle);
+    scoreText = game.add.text(5, 5, 'Бонус: 0', textStyle);
+    livesText = game.add.text(game.world.width-5, 5, 'Продовження: '+lives, textStyle);
     livesText.anchor.set(1,0);
     lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, tap to continue', textStyle);
     lifeLostText.anchor.set(0.5);
@@ -104,7 +104,7 @@ function ballHitBrick(ball, brick) {
     score += 10;
     scoreText.setText('Points: '+score);
     if(score === brickInfo.count.row*brickInfo.count.col*10) {
-        alert('Congratulations! Your score: + ' + score);
+        alert('Вітання! Ваш рахунок: + ' + score);
         window.location.href="https://danylogera.github.io/game-5/";
     }
 }
@@ -121,7 +121,7 @@ function ballLeaveScreen() {
         }, this);
     }
     else {
-        alert('You lost, game over!');
+        alert('Спробуйте ще!');
         location.reload();
     }
 }
