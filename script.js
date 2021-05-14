@@ -14,10 +14,7 @@ var playing = false;
 var startButton;
 
 function preload() {
-	// handleRemoteImagesOnJSFiddle();
-    // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    // game.scale.pageAlignHorizontally = true;
-    // game.scale.pageAlignVertically = true;
+
     game.stage.backgroundColor = '#CEDCE2';
     game.load.image('paddle', 'img/paddle.png');
     game.load.image('brick', 'img/brick.png');
@@ -134,9 +131,3 @@ function startGame() {
     ball.body.velocity.set(300, -300);
     playing = true;
 }
-
-// this function (needed only on JSFiddle) take care of loading the images from the remote server
-// function handleRemoteImagesOnJSFiddle() {
-// 	game.load.baseURL = 'https://end3r.github.io/Gamedev-Phaser-Content-Kit/demos/';
-// 	game.load.crossOrigin = 'anonymous';
-// }
