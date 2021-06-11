@@ -48,16 +48,17 @@ canvas {
 }
 .callout {
   position: fixed;
-  width: 50%;
-max-width: 800px;
-position: absolute;
-top: 2%;
+  width: 60%;
+  max-width: 800px;
+  /* position: absolute; */
+  top: 2%;
+  z-index: 5;
 }
 
 .callout-header {
-  padding: 25px 15px;
+  padding: 25px 0;
   background: #555;
-  font-size: 40px;
+  font-size: 27pt;
   color: white;
   text-align: center
 }
@@ -68,7 +69,7 @@ top: 2%;
   color: black;
   text-align: center;
   text-align: justify;
-  font-size: 29pt;
+  font-size: 26pt;
 }
 
 .closebtn1 {
