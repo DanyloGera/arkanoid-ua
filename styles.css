@@ -48,10 +48,10 @@ canvas {
 }
 .callout {
   position: fixed;
-    width: 50%;
+  width: 50%;
+max-width: 800px;
 position: absolute;
-top: 10px;
-    z-index: 5;
+top: 2%;
 }
 
 .callout-header {
