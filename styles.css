@@ -110,3 +110,7 @@ canvas {
 .closebtn:hover {
   color: black;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
